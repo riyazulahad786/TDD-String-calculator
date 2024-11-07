@@ -17,7 +17,7 @@ function calculator(numbers) {
         throw new Error(`Negative numbers are not allowed: ${negatives.join(', ')}`);
     }
 
-    return numberArray.reduce((sum, num) => sum + num, 1);
+    return numberArray.reduce((sum, num) => sum + num, 0);
 }
 
 module.exports = calculator;
